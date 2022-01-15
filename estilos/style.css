@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+html {
+    height: 100%;
+}
+body{
+ background-color: indigo;
+
+ font-size: 1rem;
+ min-height: 100%;
+}
+.container{
+    text-align: center
+}
+.container{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "header" 
+    "navbar" 
+    "main" 
+    "article" 
+    "footer" ;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+.header{
+    grid-area: header;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+   
+}
+.navbar {
+    grid-area: navbar;
+    background: darkgreen;
+}
+.main{
+    
+    grid-area: main;
+    background: rgb(201, 164, 123);
+}
+.article{
+    
+    grid-area: article;
+    background: mediumslateblue;
+}
+.footer{
+    grid-area: footer;
+    background: olivedrab;
+}
+@media (min-width: 600px){
+.container{
+    background: blue;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto 100px auto 100px;
+    grid-template-areas:
+    "header header" 
+    "navbar navbar"
+    "article main"
+    "footer footer";
+}
+}
+@media (min-width: 1000px){
+    .container{
+        background: black;
+        grid-template-columns: 150px auto 200px;
+        grid-template-rows: auto auto auto 150px;
+        grid-template-areas:
+        "header header header"
+        "navbar main article"
+        "navbar main article"
+        "footer footer footer" ;
+    }
+}
+/* header*/ 
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    
+    }
+    .titulo{
+        width: 100%;
+        color:chocolate;
+        font-family: cursive;
+       font-size: 3vw;
+       
+    }
+    .logow{
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .logoc{
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+.logoImagen{
+    width: 100%;
+}
+
+   
+    /*nav*/
+    
+
+    
+    .navbar a{
+       display: inline-block;
+        margin: 20px;
+        padding: 20px;
+       color: black;
+        background: rgb(158, 153, 153);
+        text-decoration: none;
+        border: solid black 1px;
+        
+    }
+    /*main*/
+    .pilares{
+         list-style: none;
+         font-family: fantasy;
+         font-size: 1.3vw;
+         padding: 15px;
+         border: solid rgb(100, 99, 57) 3px;
+         margin: 1vw 8vw;
+
+    }
+    p{
+        font-size: 1.8vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: black;
+    }
+    /*article*/
+    .imagArt{
+    display: flex;
+    justify-content: space-evenly;
+        width: 100%;
+    }
+    .chenSemi{
+        
+        
+             width: 100%;
+            
+    }
+    .footer{
+        display:flex;
+        justify-content: space-evenly;
+        
+    }
+
+/* body de sections*/
+.contSection{
+    background-color: cyan;
+    min-height: 100%;
+}
+.logow2{
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+}
+.logoc2{
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.header2{
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    background: white ;
+}
+.navbar2{
+    background: #b4934a;
+    padding: 20px;
+}
+.navbar2 a{
+    display: inline-block;
+        margin: 10px;
+        padding: 20px;
+       color: black;
+        background: rgb(158, 153, 153);
+        text-decoration: none;
+}
+.main2{
+    
+    background: royalblue;
+    margin: 10px;
+}
+
+.card-ugarte{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fotoUgarte{
+    width: 25vw;
+    height: 25vw;
+    
+    border: 2px solid black;
+}
+.footer2{
+    background: salmon;
+    
+}
+/*footer*/
+.ico{
+    width: 40px;
+    height: 40px;
+}
+/*galeria*/
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    
+}
+.grid-item:hover{
+    opacity: (0.9);
+    transform: scale(1.4);
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto );
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: dense;
+}
+.wide{
+    grid-column: span 2
+}
+.tall{
+grid-row: span 2;
+}
+.fotosGaleria{
+    width: 250px;
+    height: 250px;
+}
+.fotosGaleriawide{
+    width: 500px;
+    height: 250px;
+}
+.fotosGaleriaTall{
+    width: 250px;
+    height: 500px;
+}
