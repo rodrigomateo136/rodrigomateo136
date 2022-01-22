@@ -7,17 +7,17 @@ html {
     height: 100%;
 }
 body{
- background-color: indigo;
+ background-color: white;
 
  font-size: 1rem;
  min-height: 100%;
 }
 .container{
-    text-align: center
+    text-align: center;
 }
 .container{
     display: grid;
-    gap: 5px;
+    gap: 2px;
     grid-template-areas: 
     "header" 
     "navbar" 
@@ -25,7 +25,7 @@ body{
     "article" 
     "footer" ;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto ;
 }
 .header{
     grid-area: header;
@@ -38,27 +38,27 @@ body{
 }
 .navbar {
     grid-area: navbar;
-    background: darkgreen;
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103)) ;
 }
 .main{
     
     grid-area: main;
-    background: rgb(201, 164, 123);
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103)) ;
 }
 .article{
     
     grid-area: article;
-    background: mediumslateblue;
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103)) ;
 }
 .footer{
     grid-area: footer;
-    background: olivedrab;
+    background: rgb(236, 154, 94);
 }
 @media (min-width: 600px){
 .container{
-    background: blue;
-    grid-template-columns: 150px auto;
-    grid-template-rows: auto 100px auto 100px;
+    background: white;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 100px auto auto;
     grid-template-areas:
     "header header" 
     "navbar navbar"
@@ -68,9 +68,9 @@ body{
 }
 @media (min-width: 1000px){
     .container{
-        background: black;
-        grid-template-columns: 150px auto 200px;
-        grid-template-rows: auto auto auto 150px;
+        background: white;
+        grid-template-columns: 150px auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas:
         "header header header"
         "navbar main article"
@@ -113,17 +113,18 @@ header div{
    
     /*nav*/
     
-
-    
     .navbar a{
        display: inline-block;
-        margin: 20px;
-        padding: 20px;
-       color: black;
-        background: rgb(158, 153, 153);
+        margin: 6px auto;
+        padding: 14px;
+        color: white;
+        background: black;
         text-decoration: none;
-        border: solid black 1px;
-        
+        border: solid white 1px;
+        border-radius: 110px;
+        width: 55px auto;
+        height: 55px;
+       
     }
     /*main*/
     .pilares{
@@ -136,7 +137,7 @@ header div{
 
     }
     p{
-        font-size: 1.8vw;
+        font-size: 1.6vw;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: black;
     }
@@ -145,13 +146,10 @@ header div{
     display: flex;
     justify-content: space-evenly;
         width: 100%;
+    height: 100%;
     }
-    .chenSemi{
-        
-        
-             width: 100%;
-            
-    }
+    
+    
     .footer{
         display:flex;
         justify-content: space-evenly;
@@ -160,8 +158,14 @@ header div{
 
 /* body de sections*/
 .contSection{
-    background-color: cyan;
+    background-color: white;
     min-height: 100%;
+}
+.header div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
 }
 .logow2{
     width: 100%;
@@ -177,25 +181,29 @@ header div{
 .header2{
     display: flex;
     justify-content: space-around;
-    
+text-align: center;
     align-items: center;
     background: white ;
+     width: 100%;
 }
 .navbar2{
-    background: #b4934a;
-    padding: 20px;
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103)) ;
+    padding: 10px;
 }
 .navbar2 a{
     display: inline-block;
-        margin: 10px;
-        padding: 20px;
-       color: black;
-        background: rgb(158, 153, 153);
+        margin: 6px;
+        padding: 12px;
+        color: white;
+        background: black;
         text-decoration: none;
+        border: solid white 1px;
+        border-radius: 90px;
+        width: 45px auto;
+        height: 45px;
 }
 .main2{
-    
-    background: royalblue;
+ background-color: white;
     margin: 10px;
 }
 
@@ -204,10 +212,11 @@ header div{
     justify-content: space-evenly;
 }
 .fotoUgarte{
-    width: 25vw;
-    height: 25vw;
+    width: 23vw;
+    height: 21vw;
     
-    border: 2px solid black;
+    border: 2px solid rgb(77, 58, 58);
+    border-radius: 100px;
 }
 .footer2{
     background: salmon;
@@ -215,8 +224,8 @@ header div{
 }
 /*footer*/
 .ico{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 /*galeria*/
 .grid-item{
@@ -229,6 +238,7 @@ header div{
 .grid-item:hover{
     opacity: (0.9);
     transform: scale(1.4);
+    transition: all, 3s;
 }
 
 .grid-galeria{
@@ -256,4 +266,30 @@ grid-row: span 2;
 .fotosGaleriaTall{
     width: 250px;
     height: 500px;
+}
+/*galeria*/
+.contacto{
+    display: grid;
+    gap: 2px;
+    grid-template-areas: 
+    "ol section";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto ;
+    
+}
+ol{
+    grid-area: ol;
+margin: 10px;
+}
+section{
+    grid-area: section;
+    display: flex;
+    justify-content: space-around;
+        margin-top: 150px;
+}
+/*taiji*/
+.taijiFotos{
+    display: flex;
+    justify-content: space-evenly;
+    
 }
