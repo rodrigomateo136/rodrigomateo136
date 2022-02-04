@@ -235,6 +235,8 @@ text-align: center;
 }
 .footer2{
     background: salmon;
+    display:flex;
+    justify-content: space-evenly;
     
 }
 /*footer*/
@@ -274,7 +276,7 @@ grid-row: span 2;
     width: 250px;
     height: 250px;
 }
-.fotosGaleriawide{
+.fotosGaleriaWide{
     width: 500px;
     height: 250px;
 }
