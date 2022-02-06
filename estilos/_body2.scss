@@ -1,0 +1,101 @@
+/*header2*/
+
+.contSection{
+    background-color: white;
+    min-height: 100%;
+}
+.header div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .logow2{
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .logoc2{
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    }
+.header2{
+    display: flex;
+    justify-content: space-around;
+text-align: center;
+    align-items: center;
+    background: white ;
+     width: 100%;
+}
+/*navbaar2*/
+
+.navbar2{
+    background-image: $colorForndo ;
+    padding: 10px;
+}
+.navbar2 a{
+    display: inline-block;
+        margin: 15px 50px;
+        padding: 12px;
+        color: white;
+        background: black;
+        text-decoration: none;
+        border: solid white 1px;
+        border-radius: 90px;
+        width: 45px auto;
+        height: 45px;
+}
+/*main2*/
+
+.main2{
+ background-color: white;
+    margin: 10px;
+}
+/*contacto*/
+.contacto{
+    display: grid;
+    gap: 2px;
+    grid-template-areas: 
+    "ol section";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto ;
+    
+}
+ol{
+    grid-area: ol;
+margin: 10px;
+}
+section{
+    grid-area: section;
+    display: flex;
+    justify-content: space-around;
+        margin-top: 150px;
+}
+/*kung fu y taiji galeria*/
+
+.card-ugarte{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fotoUgarte{
+    width: $foto-ancho;
+    height: $foto-alto;
+    border: $foto-borde;
+    border-radius: $foto-rad;
+}
+.taijiFotos{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*footer2*/
+
+.footer2{
+    display: flex;
+    justify-content: space-evenly;
+    background: $colorFooter;
+      .ico{
+     width: $ico-alto;
+     height: $ico-ancho;
+      }
+    }

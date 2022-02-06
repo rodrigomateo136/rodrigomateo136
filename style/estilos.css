@@ -1,0 +1,512 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  font-size: 1rem;
+  min-height: 100%;
+}
+
+body .container {
+  text-align: center;
+  min-width: 100%;
+}
+
+body .container h1 {
+  font-size: 6vw;
+  color: chocolate;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2px;
+      grid-template-areas: "header" 
+ "navbar" 
+ "main" 
+ "article" 
+ "footer";
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.navbar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: navbar;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
+  background-image: linear-gradient(to bottom, white, #f1a167);
+}
+
+.main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
+  background-image: linear-gradient(to bottom, white, #f1a167);
+}
+
+.article {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: article;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
+  background-image: linear-gradient(to bottom, white, #f1a167);
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background: #ec9a5e;
+}
+
+/* header*/
+.header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+}
+
+.header div .titulo {
+  width: 100%;
+  color: chocolate;
+  font-family: cursive;
+  font-size: 3vw;
+}
+
+.header div .logow {
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header div .logoc {
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header div .logoc .logoImagen {
+  width: 100%;
+}
+
+/*nav*/
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar .bott {
+  display: inline-block;
+  margin: 6px auto;
+  padding: 14px;
+  color: white;
+  background: black;
+  text-decoration: none;
+  border: solid white 1px;
+  border-radius: 110px;
+  width: 55px auto;
+  height: 55px;
+}
+
+.navbar a {
+  display: inline-block;
+  margin: 6px auto;
+  padding: 14px;
+  color: white;
+  background: black;
+  text-decoration: none;
+  border: solid white 1px;
+  border-radius: 110px;
+  width: 55px auto;
+  height: 55px;
+}
+
+/*main*/
+.pilares {
+  list-style: none;
+  font-family: fantasy;
+  font-size: 1.3vw;
+  padding: 15px;
+  border: solid #646339 3px;
+  margin: 1vw 8vw;
+}
+
+p {
+  font-size: 1.6vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+}
+
+/*article*/
+.imagArt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+/* footer*/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .ico {
+  width: 30px;
+  height: 30px;
+}
+
+/*header2*/
+.contSection {
+  background-color: white;
+  min-height: 100%;
+}
+
+.header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header div .logow2 {
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header div .logoc2 {
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.header2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  width: 100%;
+}
+
+/*navbaar2*/
+.navbar2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
+  background-image: linear-gradient(to bottom, white, #f1a167);
+  padding: 10px;
+}
+
+.navbar2 a {
+  display: inline-block;
+  margin: 15px 50px;
+  padding: 12px;
+  color: white;
+  background: black;
+  text-decoration: none;
+  border: solid white 1px;
+  border-radius: 90px;
+  width: 45px auto;
+  height: 45px;
+}
+
+/*main2*/
+.main2 {
+  background-color: white;
+  margin: 10px;
+}
+
+/*contacto*/
+.contacto {
+  display: -ms-grid;
+  display: grid;
+  gap: 2px;
+      grid-template-areas: "ol section";
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+ol {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ol;
+  margin: 10px;
+}
+
+section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: section;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 150px;
+}
+
+/*kung fu y taiji galeria*/
+.card-ugarte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fotoUgarte {
+  width: 23vw;
+  height: 21vw;
+  border: border 2px solid #4d3a3a;
+  border-radius: 100px;
+}
+
+.taijiFotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/*footer2*/
+.footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #ec9a5e;
+}
+
+.footer2 .ico {
+  width: 30px;
+  height: 30px;
+}
+
+.heartbeat {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-1-25 21:16:47
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 2px black;
+}
+
+.grid-item:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: all, 3s;
+  transition: all, 3s;
+}
+
+.grid-galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 10px;
+  padding: 10px;
+  grid-auto-flow: dense;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.fotosGaleria {
+  width: 250px;
+  height: 250px;
+}
+
+.fotosGaleriaWide {
+  width: 500px;
+  height: 250px;
+}
+
+.fotosGaleriaTall {
+  width: 250px;
+  height: 500px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    background: white;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto 100px auto auto;
+        grid-template-rows: auto 100px auto auto;
+        grid-template-areas: "header header" 
+ "navbar navbar"
+ "article main"
+ "footer footer";
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    background: white;
+    -ms-grid-columns: 150px auto auto;
+        grid-template-columns: 150px auto auto;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header header header"
+ "navbar main article"
+ "navbar main article"
+ "footer footer footer";
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

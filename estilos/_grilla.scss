@@ -1,0 +1,40 @@
+.container{
+    display: grid;
+    gap: 2px;
+    grid-template-areas: 
+    "header" 
+    "navbar" 
+    "main" 
+    "article" 
+    "footer" ;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto ;
+}
+.header{
+    grid-area: header;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+   
+}
+.navbar {
+    grid-area: navbar;
+
+    background-image: $colorForndo ;
+}
+.main{
+    
+    grid-area: main;
+    background-image: $colorForndo ;
+}
+.article{
+    
+    grid-area: article;
+    background-image: $colorForndo ;
+}
+.footer{
+    grid-area: footer;
+    background: $colorFooter;
+}
