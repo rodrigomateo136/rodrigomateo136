@@ -14,30 +14,49 @@
         @include cajaFoto;
     }
 }
-}
+
 .header2{
     display: flex;
     justify-content: space-around;
-text-align: center;
+    text-align: center;
     align-items: center;
     background: white ;
      width: 100%;
 }
 
 /*navbar2*/
-
+a{
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103));;
+    border-radius: 20px;
+     margin: 20px
+}
 
 .navbar2{
-    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103));
-    padding: 10px;
+   @extend a;
+    margin:0%;
+
     .bott{
-        @include bottonNav;
+       @include botoNav;
         }
+}
 /*main2*/
 
 .main2{
  background-color: white;
     margin: 10px;
+}
+/*footer2*/
+
+.footer2{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103));
+}
+     .ico{
+     width: $ico-alto;
+     height: $ico-ancho;
+      }
+
 }
 /*contacto*/
 .contacto{
@@ -75,15 +94,3 @@ section{
     display: flex;
     justify-content: space-evenly;
 }
-/*footer2*/
-
-.footer2{
-    display: flex;
-    justify-content: space-evenly;
-    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103)); 
-}
-     .ico{
-     width: $ico-alto;
-     height: $ico-ancho;
-      }
-    }
