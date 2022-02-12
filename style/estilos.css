@@ -15,13 +15,13 @@ body {
   min-height: 100%;
 }
 
-body .container {
+.container {
   text-align: center;
   min-width: 100%;
 }
 
-body .container h1 {
-  font-size: 6vw;
+h1 {
+  font-size: 5vw;
   color: chocolate;
 }
 
@@ -29,11 +29,7 @@ body .container h1 {
   display: -ms-grid;
   display: grid;
   gap: 2px;
-      grid-template-areas: "header" 
- "navbar" 
- "main" 
- "article" 
- "footer";
+  grid-template: "header"  "navbar"  "main"  "article"  "footer";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: auto auto auto auto;
@@ -41,8 +37,6 @@ body .container h1 {
 }
 
 .header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: header;
   background: white;
   display: -webkit-box;
@@ -54,34 +48,27 @@ body .container h1 {
 }
 
 .navbar {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: navbar;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
   background-image: linear-gradient(to bottom, white, #f1a167);
 }
 
 .main {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: main;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
   background-image: linear-gradient(to bottom, white, #f1a167);
 }
 
 .article {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: article;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
   background-image: linear-gradient(to bottom, white, #f1a167);
 }
 
 .footer {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: footer;
-  background: #ec9a5e;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
+  background: linear-gradient(to bottom, white, #f1a167);
 }
 
 /* header*/
@@ -200,13 +187,12 @@ p {
   height: 30px;
 }
 
-/*header2*/
 .contSection {
   background-color: white;
   min-height: 100%;
 }
 
-.header div {
+.contSection .header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,13 +202,13 @@ p {
       flex-wrap: wrap;
 }
 
-.header div .logow2 {
+.contSection .header div .logow2 {
   width: 100%;
   max-width: 200px;
   max-height: 200px;
 }
 
-.header div .logoc2 {
+.contSection .header div .logoc2 {
   width: 100%;
   max-width: 200px;
   max-height: 200px;
@@ -242,54 +228,52 @@ p {
   width: 100%;
 }
 
-/*navbaar2*/
+/*navbar2*/
 .navbar2 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
   background-image: linear-gradient(to bottom, white, #f1a167);
   padding: 10px;
+  /*main2*/
+  /*contacto*/
+  /*kung fu y taiji galeria*/
+  /*footer2*/
 }
 
-.navbar2 a {
+.navbar2 .bott {
   display: inline-block;
-  margin: 15px 50px;
-  padding: 12px;
+  margin: 6px auto;
+  padding: 14px;
   color: white;
   background: black;
   text-decoration: none;
   border: solid white 1px;
-  border-radius: 90px;
-  width: 45px auto;
-  height: 45px;
+  border-radius: 110px;
+  width: 55px auto;
+  height: 55px;
 }
 
-/*main2*/
-.main2 {
+.navbar2 .main2 {
   background-color: white;
   margin: 10px;
 }
 
-/*contacto*/
-.contacto {
+.navbar2 .contacto {
   display: -ms-grid;
   display: grid;
   gap: 2px;
-      grid-template-areas: "ol section";
+  grid-template: "ol section";
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
 
-ol {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+.navbar2 ol {
   grid-area: ol;
   margin: 10px;
 }
 
-section {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+.navbar2 section {
   grid-area: section;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,8 +283,7 @@ section {
   margin-top: 150px;
 }
 
-/*kung fu y taiji galeria*/
-.card-ugarte {
+.navbar2 .card-ugarte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,14 +292,14 @@ section {
           justify-content: space-evenly;
 }
 
-.fotoUgarte {
+.navbar2 .fotoUgarte {
   width: 23vw;
   height: 21vw;
   border: border 2px solid #4d3a3a;
   border-radius: 100px;
 }
 
-.taijiFotos {
+.navbar2 .taijiFotos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,18 +308,18 @@ section {
           justify-content: space-evenly;
 }
 
-/*footer2*/
-.footer2 {
+.navbar2 .footer2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: #ec9a5e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1a167));
+  background-image: linear-gradient(to bottom, white, #f1a167);
 }
 
-.footer2 .ico {
+.navbar2 .ico {
   width: 30px;
   height: 30px;
 }
@@ -489,10 +472,7 @@ section {
         grid-template-columns: auto auto;
     -ms-grid-rows: auto 100px auto auto;
         grid-template-rows: auto 100px auto auto;
-        grid-template-areas: "header header" 
- "navbar navbar"
- "article main"
- "footer footer";
+        grid-template-areas: "header header"  "navbar navbar" "article main" "footer footer";
   }
 }
 
@@ -503,10 +483,7 @@ section {
         grid-template-columns: 150px auto auto;
     -ms-grid-rows: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
-        grid-template-areas: "header header header"
- "navbar main article"
- "navbar main article"
- "footer footer footer";
+        grid-template-areas: "header header header" "navbar main article" "navbar main article" "footer footer footer";
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -1,25 +1,20 @@
-/*header2*/
-
 .contSection{
     background-color: white;
     min-height: 100%;
-}
+
 .header div{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     
     .logow2{
-        width: 100%;
-        max-width: 200px;
-        max-height: 200px;
+        @include cajaFoto;
     }
     .logoc2{
-        width: 100%;
-        max-width: 200px;
-        max-height: 200px;
+        @include cajaFoto;
     }
-    }
+}
+}
 .header2{
     display: flex;
     justify-content: space-around;
@@ -28,24 +23,16 @@ text-align: center;
     background: white ;
      width: 100%;
 }
-/*navbaar2*/
+
+/*navbar2*/
+
 
 .navbar2{
-    background-image: $colorForndo ;
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103));
     padding: 10px;
-}
-.navbar2 a{
-    display: inline-block;
-        margin: 15px 50px;
-        padding: 12px;
-        color: white;
-        background: black;
-        text-decoration: none;
-        border: solid white 1px;
-        border-radius: 90px;
-        width: 45px auto;
-        height: 45px;
-}
+    .bott{
+        @include bottonNav;
+        }
 /*main2*/
 
 .main2{
@@ -56,7 +43,7 @@ text-align: center;
 .contacto{
     display: grid;
     gap: 2px;
-    grid-template-areas: 
+    grid-template: 
     "ol section";
     grid-template-columns: auto auto;
     grid-template-rows: auto ;
@@ -93,8 +80,9 @@ section{
 .footer2{
     display: flex;
     justify-content: space-evenly;
-    background: $colorFooter;
-      .ico{
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103)); 
+}
+     .ico{
      width: $ico-alto;
      height: $ico-ancho;
       }

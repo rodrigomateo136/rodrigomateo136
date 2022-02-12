@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="entrena kung fu en pilar y zona norte, todas las edades">
+    <meta name="keywords" content="pilar , del viso, zona norte, kung fu, infantil, deporte, niños">
+    <title>entrenar kung fu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/estilos.css">
 </head>
 <body class="contSection"> 
@@ -21,12 +24,46 @@
             <img class="logoImagen" src="../imagenes/chenbing.png" alt="">
         </div>
     </header>      
-    <nav class="navbar2">
-        <a href="../index.html">Home</a>
-        <a href="../sections/kungfu.html">Kung fu</a>
-        <a href="../sections/taiji.html">Chen taiji</a>
-        <a href="../sections/contacto.html">Contactos</a>
-        <a href="../sections/galeria.html">galeria</a>
+    <nav class="navbar2 navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="">
+                  Estilos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../sections/kungfu.html">Shaolin</a></li>
+                  <li><a class="dropdown-item" href="../sections/taiji.html">Taiji Chen</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Maestros
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../sections/direnzo.html">sifu Ugarte</a></li>
+                  <li><a class="dropdown-item" href="../sections/direnzo.html">Sifu chen bing</a></li>
+                  <li><a class="dropdown-item" href="../sections/direnzo.html">Sifu Direnzo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../sections/contacto.html">contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color" href="../sections/galeria.html">galeria</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
     <main >
          <h2>contactos</h2>
@@ -38,15 +75,15 @@
                           <input type="text" placeholder="Nombre" required name="nombre" id="nombre"> </li>
                      </li>
                      <li>
-                         <label for="apellido">apellido</label>
+                         <label for="apellido">Apellido</label>
                          <input type="text" placeholder="apellido" name="apellido" id="apellido">
                      </li>
                      <li>
-                         <label for="email">email </label>
+                         <label for="email">   e-mail   </label>
                          <input type="email" name="email" id="email" required >
                      </li>
                      <li>
-                         <label for="celular">celular </label>
+                         <label for="celular">Celular </label>
                          <input type="number" placeholder="celular" name="celular" required id="celular">
                      </li>
                      <br>
@@ -54,7 +91,7 @@
     
                      <textarea name="consultas" id="" cols="30" rows="10"></textarea>
     
-                     <p>Que queres estudiar</p>
+                     <p>¿Que queres estudiar?</p>
                      <input type="checkbox"> shaolin norteño <br>
                      <input type="checkbox"> chen tai chi  <br>
                      <input type="checkbox"> ambos   <br>
@@ -64,9 +101,10 @@
                          <option value="edades de practica">infantiles</option>
                          <option value="edades de practica">adolecentes</option>
                          <option value="edades de practica">adultos</option>
-                     </select><br>
-    
-                     <label for="limpiar">limpiar</label><br>
+                     </select>
+                      <br>
+                      <br>
+                     <label for="limpiar">Limpiar</label><br>
                      <input type="reset" name="limpiar" id=""><br>
     
                      <input type="submit"> 
@@ -90,5 +128,6 @@
      <p>Rodrigo mateo</p>
      <p>comision 28365</p> 
      </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
  </body>
  </html>

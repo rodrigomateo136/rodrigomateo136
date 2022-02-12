@@ -1,5 +1,5 @@
-$colorForndo: linear-gradient(to bottom , white,rgb(241, 161, 103));
-$colorFooter: rgb(236, 154, 94);
+
+$colorFooter: rgb(241, 161, 103);
 $foto-ancho: 23vw;
 $foto-alto: 21vw;
 $foto-borde: border  2px solid rgb(77, 58, 58);
@@ -8,5 +8,20 @@ $ico-ancho: 30px;
 $ico-alto: 30px;
 $foto-ancho: 23vw;
 $foto-alto: 21vw;
-  
-
+@mixin cajaFoto {
+    width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+}
+@mixin bottonNav {
+    display: inline-block;
+    margin: 6px auto;
+    padding: 14px;
+    color: white;
+    background: black;
+    text-decoration: none;
+    border: solid white 1px;
+    border-radius: 110px;
+    width: 55px auto;
+    height: 55px;
+}

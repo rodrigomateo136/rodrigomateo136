@@ -1,7 +1,7 @@
 .container{
     display: grid;
     gap: 2px;
-    grid-template-areas: 
+    grid-template: 
     "header" 
     "navbar" 
     "main" 
@@ -22,19 +22,19 @@
 .navbar {
     grid-area: navbar;
 
-    background-image: $colorForndo ;
+    background-image:linear-gradient(to bottom , white,rgb(241, 161, 103)); ;
 }
 .main{
     
     grid-area: main;
-    background-image: $colorForndo ;
+    background-image:linear-gradient(to bottom , white,rgb(241, 161, 103)); ;
 }
 .article{
     
     grid-area: article;
-    background-image: $colorForndo ;
+    background-image: linear-gradient(to bottom , white,rgb(241, 161, 103)); ;
 }
 .footer{
     grid-area: footer;
-    background: $colorFooter;
+    background: linear-gradient(to bottom , white,rgb(241, 161, 103)); 
 }
