@@ -25,17 +25,20 @@
 }
 
 /*navbar2*/
-a{
+a{ 
     background-image: linear-gradient(to bottom , white,rgb(241, 161, 103));;
     border-radius: 20px;
-     margin: 20px
+    
 }
 
 .navbar2{
+    
    @extend a;
-    margin:0%;
+  
 
     .bott{
+      
+    
        @include botoNav;
         }
 }
