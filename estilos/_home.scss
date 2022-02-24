@@ -1,38 +1,76 @@
 /* header*/ 
 
-.header div{
+.header {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    align-items: center;
+    
+    align-items: center;}
+
          .titulo{
+            display: block;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
          width: 100%;
          color: chocolate;
          font-family: cursive;
-         font-size: 3vw;
+         h1{
+             font-size: 6vw;
          }
-         .logow{
-         width: 100%;
-         max-width: 200px;
-         max-height: 200px;
+         h2{
+             font-size: 5vw;
          }
+         
+         }
+        .logow{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+          
+        
+        } 
          .logoc{
-         width: 100%;
-         max-width: 200px;
-         max-height: 200px;
-             .logoImagen{
-             width: 100%;
-             }
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+           
+        
          }
+         .logoImagen{
+             width: 12vw;
+             height: 12vw;
          }
+          
    
     /*nav*/
+    
+        
+    
     .navbar{
+        
         display: flex;
         justify-content: space-around;
+        .boton{
+            display: inline-block;
+             padding: 14px;
+             background: black;
+              border: solid white 1px;
+             border-radius: 110px;
+             width: 55px auto;
+             height: 55px;
+             font-size: 1.5vw;
+             }
+             .boton a{
+                text-decoration: none;
+                color: white;
+                
+            }
+    
     
         .bott{
+            font-size: 1.5vw;
             display: inline-block;
              margin: 6px auto;
              padding: 14px;
@@ -43,20 +81,16 @@
              border-radius: 110px;
              width: 55px auto;
              height: 55px;
+             
+         }
+         .dropdown-item{
+            background: black;
+            border-radius: 110px;
+            color: white;
          }
           }
-    .navbar a{
-       display: inline-block;
-        margin: 6px auto;
-        padding: 14px;
-        color: white;
-        background: black;
-        text-decoration: none;
-        border: solid white 1px;
-        border-radius: 110px;
-        width: 55px auto;
-        height: 55px;
-       }
+          
+    
     /*main*/
     .pilares{
          list-style: none;
@@ -86,5 +120,7 @@
         .ico{
             width: $ico-alto;
             height: $ico-ancho;
+            border-radius: 1vw;
+            margin-top: .5vw;
              }
     }

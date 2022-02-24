@@ -1,17 +1,16 @@
 
 $colorFooter: rgb(241, 161, 103);
-$foto-ancho: 23vw;
-$foto-alto: 21vw;
+$foto-ancho: 28vw;
+$foto-alto: 30vw;
 $foto-borde: border  2px solid rgb(77, 58, 58);
 $foto-rad: 100px;  
 $ico-ancho: 30px;
 $ico-alto: 30px;
-$foto-ancho: 23vw;
-$foto-alto: 21vw;
+
 @mixin cajaFoto {
-    width: 100%;
-        max-width: 200px;
-        max-height: 200px;
+    
+        width: 1vw;
+        height: 1vw;
 }
 @mixin botoNav {
     display: inline-block;

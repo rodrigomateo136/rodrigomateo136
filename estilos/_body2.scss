@@ -1,4 +1,5 @@
 .contSection{
+    
     background-color: white;
     min-height: 100%;
 
@@ -8,13 +9,16 @@
     flex-wrap: wrap;
     
     .logow2{
-        @include cajaFoto;
+    
+        width: 100%;
+        
     }
     .logoc2{
-        @include cajaFoto;
+       
+        width: 100%;
     }
+    
 }
-
 .header2{
     display: flex;
     justify-content: space-around;
@@ -27,7 +31,7 @@
 /*navbar2*/
 a{ 
     background-image: linear-gradient(to bottom , white,rgb(241, 161, 103));;
-    border-radius: 20px;
+    border-radius: 10vw;
     
 }
 
@@ -58,34 +62,50 @@ a{
      .ico{
      width: $ico-alto;
      height: $ico-ancho;
+     border-radius: 1vw;
       }
 
 }
 /*contacto*/
+
 .contacto{
     display: grid;
-    gap: 2px;
+
+    gap: 1vw;
     grid-template: 
-    "ol section";
-    grid-template-columns: auto auto;
+    " article ol section";
+    grid-template-columns: auto  auto auto;
     grid-template-rows: auto ;
     
 }
+article{
+    grid-area: article;
+    
+    
+    margin-top: 12vw;
+    
+}
 ol{
+width: 10vw auto;
+    margin-left: 1vw;
     grid-area: ol;
-margin: 10px;
+
 }
 section{
     grid-area: section;
-    display: flex;
-    justify-content: space-around;
-        margin-top: 150px;
+    
+        margin-top: 12vw;
+        margin-right: 1vw;
+} 
+.fotoCont{
+    width: 25vw;
+    height: 25vw;
 }
 /*kung fu y taiji galeria*/
 
 .card-ugarte{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .fotoUgarte{
     width: $foto-ancho;

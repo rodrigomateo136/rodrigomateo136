@@ -13,11 +13,12 @@
 
 .grid-galeria{
     display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, auto );
-    gap: 10px;
-    padding: 10px;
+    grid-template-columns:repeat(auto-fill, minmax(17.5vw, 1fr));
+    grid-auto-rows: minmax(17.5vw, auto );
+    gap: 1vw;
+    padding: 1vw;
     grid-auto-flow: dense;
+    
 }
 .wide{
     grid-column: span 2
@@ -26,14 +27,14 @@
 grid-row: span 2;
 }
 .fotosGaleria{
-    width: 250px;
-    height: 250px;
+    width: 17vw;
+    height: 17vw;
 }
 .fotosGaleriaWide{
-    width: 500px;
-    height: 250px;
+    width: 37vw ;
+    height: 17vw ;
 }
 .fotosGaleriaTall{
-    width: 250px;
-    height: 500px;
+    width: 17vw;
+    height: 37vw;
 }
