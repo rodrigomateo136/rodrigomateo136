@@ -68,7 +68,10 @@ a{
 }
 /*contacto*/
 
+
+
 .contacto{
+   
     display: grid;
 
     gap: 1vw;
@@ -85,12 +88,21 @@ article{
     margin-top: 12vw;
     
 }
+
 ol{
 width: 10vw auto;
     margin-left: 1vw;
     grid-area: ol;
-
+    
+       margin-left: auto;
+       margin-right: auto;
+       .correo{
+           margin-left: 0.7vw;
+       }
+       
+    
 }
+
 section{
     grid-area: section;
     
@@ -106,14 +118,24 @@ section{
 .card-ugarte{
     display: flex;
     justify-content: space-around;
+    .fotoUgarte{
+        width: $foto-ancho;
+        height: $foto-alto;
+        border: $foto-borde;
+        border-radius: $foto-rad;
+    }
+    .fotoUgarte2{
+        width: $foto-ancho2;
+        height: $foto-alto2;
+        border: $foto-borde;
+        border-radius: $foto-rad;
+    } 
+    .fotoUgarte3{
+        width: $foto-ancho3;
+        height: $foto-alto3;
+        border: $foto-borde;
+        border-radius: $foto-rad;
+    }
 }
-.fotoUgarte{
-    width: $foto-ancho;
-    height: $foto-alto;
-    border: $foto-borde;
-    border-radius: $foto-rad;
-}
-.taijiFotos{
-    display: flex;
-    justify-content: space-evenly;
-}
+
+

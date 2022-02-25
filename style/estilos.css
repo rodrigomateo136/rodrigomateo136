@@ -193,13 +193,16 @@ p {
 }
 
 /*article*/
+.article {
+  margin-top: -0.5vw;
+}
+
 .imagArt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   height: 100%;
 }
@@ -215,8 +218,8 @@ p {
 }
 
 .footer .ico {
-  width: 30px;
-  height: 30px;
+  width: 2vw;
+  height: 2vw;
   border-radius: 1vw;
   margin-top: .5vw;
 }
@@ -297,8 +300,8 @@ p {
 }
 
 .contSection .ico {
-  width: 30px;
-  height: 30px;
+  width: 2vw;
+  height: 2vw;
   border-radius: 1vw;
 }
 
@@ -323,6 +326,12 @@ ol {
   width: 10vw auto;
   margin-left: 1vw;
   grid-area: ol;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol .correo {
+  margin-left: 0.7vw;
 }
 
 section {
@@ -345,20 +354,25 @@ section {
       justify-content: space-around;
 }
 
-.fotoUgarte {
-  width: 28vw;
-  height: 30vw;
-  border: border 2px solid #4d3a3a;
-  border-radius: 100px;
+.card-ugarte .fotoUgarte {
+  width: 30vw;
+  height: 22vw;
+  border: border solid 1vw #4d3a3a;
+  border-radius: 5vw;
 }
 
-.taijiFotos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.card-ugarte .fotoUgarte2 {
+  width: 22vw;
+  height: 30vw;
+  border: border solid 1vw #4d3a3a;
+  border-radius: 5vw;
+}
+
+.card-ugarte .fotoUgarte3 {
+  width: 20vw;
+  height: 25vw;
+  border: border solid 1vw #4d3a3a;
+  border-radius: 5vw;
 }
 
 .heartbeat {
@@ -516,8 +530,8 @@ section {
 @media (min-width: 1000px) {
   .container {
     background: white;
-    -ms-grid-columns: 150px auto auto;
-        grid-template-columns: 150px auto auto;
+    -ms-grid-columns: 10vw auto auto;
+        grid-template-columns: 10vw auto auto;
     -ms-grid-rows: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "header header header" "navbar main article" "navbar main article" "footer footer footer";
